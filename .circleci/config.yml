@@ -41,7 +41,7 @@ workflows:
     jobs:
       - say-hello
       - say-name
-      - say-world
+      - say-world:
           requires:
             - say-hello
 
