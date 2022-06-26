@@ -58,6 +58,7 @@ workflows:
     jobs:
       - save-hello-world
       - print-pipeline
+      - test-error
       - print-hello-world:
           requires:
             - save-hello-world
