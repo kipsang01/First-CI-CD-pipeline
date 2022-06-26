@@ -20,7 +20,7 @@ jobs:
       - persist_to_workspace:
           root: .     # relative path to our working directory
           paths:      # file globs which will be persisted to the workspace
-           - rand_*
+           - output.txt
   print-hello-world:
     docker:
       - image: circleci/node:13.8.0
