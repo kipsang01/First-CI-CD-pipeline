@@ -45,7 +45,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: exit 1
-       - run:
+      - run:
           name: error
           command: echo 'There's an error '
           when: on_fail
