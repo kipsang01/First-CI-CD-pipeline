@@ -50,7 +50,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: echo 'There's an error '
-      when: on_fail
+      - when: on_fail
 
 
 # Invoke jobs via workflows
