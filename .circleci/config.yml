@@ -40,6 +40,18 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - print-pipeline-id
+  test-error:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - return 1
+  print-error:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - run: echo 'There's an error '
+    when: on_fail
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
