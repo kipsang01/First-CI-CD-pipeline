@@ -47,7 +47,7 @@ jobs:
       - run: exit 1
       - run:
           name: error
-          command: echo 'There's an error '
+          command: echo "There's an error"
           when: on_fail
      
 
