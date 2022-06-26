@@ -45,9 +45,9 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello
+      - save-hello-world
       - say-name
-      - say-world:
+      - print-hello-world:
           requires:
-            - say-hello
+            - save-hello-world
 
